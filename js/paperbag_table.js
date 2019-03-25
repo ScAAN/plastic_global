@@ -50,8 +50,7 @@ function showInfo(data, tabletop) {
 		{title:"Summary", field:"Summary and Key Stats", formatter:"textarea",  widthGrow:3, minWidth:500},
 		{title:"Study Author", field:"Study Author", formatter:"link", formatterParams:{
     labelField:"Link to Study or Official Website",
-    target:"_blank",
-} widthGrow:2},
+    target:"_blank",}, widthGrow:2},
 		//{title:"Date", field:"Date that ordinance came into effect", formatter:"textarea", width:240},
 		//{title:"Study Author", field:"Type of Study Author", formatter:"textarea", width:300},
 		{title:"Study Methodology", field:"Study Methodology", formatter:"textarea", minWidth:2000},
