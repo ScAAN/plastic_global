@@ -43,12 +43,15 @@ function showInfo(data, tabletop) {
 	    ],
 	    columns:[
 		{formatter:"responsiveCollapse", width:30, minWidth:30, align:"center", headerSort:false},
+		{title:"Date of study", field:"Date of study", formatter:"textarea", widthGrow:1},
 		{title:"Location", field:"Locale of Study", formatter:"textarea", widthGrow:1},
-		{title:"Summary", field:"Paragraph Summary", formatter:"textarea",  widthGrow:3, minWidth:500},
 		{title:"Type", field:"Type of Fee", formatter:"textarea", widthGrow:1},
 		{title:"&#162;", field:"Amount of Fee", formatter:"textarea", widthGrow:1},
-		{title:"Study Author", field:"Study Author", formatter:"textarea", widthGrow:2},
-		{title:"Date of study", field:"Date of study", formatter:"textarea", widthGrow:1},
+		{title:"Summary", field:"Summary and Key Stats", formatter:"textarea",  widthGrow:3, minWidth:500},
+		{title:"Study Author", field:"Study Author", formatter:"link", formatterParams:{
+    labelField:"Link to Study or Official Website",
+    target:"_blank",
+} widthGrow:2},
 		//{title:"Date", field:"Date that ordinance came into effect", formatter:"textarea", width:240},
 		//{title:"Study Author", field:"Type of Study Author", formatter:"textarea", width:300},
 		{title:"Study Methodology", field:"Study Methodology", formatter:"textarea", minWidth:2000},
