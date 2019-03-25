@@ -49,7 +49,8 @@ function showInfo(data, tabletop) {
 		{title:"&#162;", field:"Amount of Fee", formatter:"textarea", widthGrow:1},
 		{title:"Summary", field:"Summary and Key Stats", formatter:"textarea",  widthGrow:3, minWidth:500},
 		{title:"Study Author", field:"Study Author", widthGrow:2, formatter:"link", formatterParams:{
-    labelField:"Link to Study or Official Website",
+    labelField:"Study Author",
+    url:"Link to Study or Official Website",
     target:"_blank",}},
 		//{title:"Date", field:"Date that ordinance came into effect", formatter:"textarea", width:240},
 		//{title:"Study Author", field:"Type of Study Author", formatter:"textarea", width:300},
