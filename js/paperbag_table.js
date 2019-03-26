@@ -61,6 +61,7 @@ function showInfo(data, tabletop) {
 		//{title:"Link to Study", field:"Link to Study or Official Website", formatter:"textarea", minWidth:2000},
 		{title:"Link to Law (if available)", field:"Link to Text of Law", minWidth:2000, formatter:"link", formatterParams:{
     labelField:"Link to Text of Law",
+    urlField:"Link to Text of Law",
     target:"_blank",}},
 		//{title:"Other Notes", field:"Other Notes", formatter:"textarea", width:300},
 	    ]
