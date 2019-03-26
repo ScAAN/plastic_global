@@ -46,7 +46,6 @@ function showInfo(data, tabletop) {
 		{title:"Year", field:"Date of study", formatter:"textarea", widthGrow:1},
 		{title:"Location", field:"Locale of Study", formatter:"textarea", widthGrow:1},
 		{title:"Type", field:"Type of Fee", formatter:"textarea", widthGrow:1},
-		{title:"&#162;", field:"Amount of Fee", formatter:"textarea", widthGrow:1},
 		{title:"Summary", field:"Summary and Key Stats", formatter:"textarea",  widthGrow:3, minWidth:500},
 		{title:"Study Author", field:"Study Author", widthGrow:2, formatter:"link", formatterParams:{
     labelField:"Study Author",
@@ -58,6 +57,7 @@ function showInfo(data, tabletop) {
 		//{title:"Key Manipulation", field:"Key Manipulation", formatter:"textarea", width:300},
 		{title:"Key Stats", field:"Key Stats", formatter:"textarea", minWidth:2000},
 		{title:"Destination of fee", field:"Destination of fee", formatter:"textarea", minWidth:2000},
+		{title:"&#162;", field:"Amount of Fee", formatter:"textarea", minWidth:2000},
 		//{title:"Link to Study", field:"Link to Study or Official Website", formatter:"textarea", minWidth:2000},
 		{title:"Link to Law (if available)", field:"Link to Text of Law", minWidth:2000, formatter:"link", formatterParams:{
     labelField:"Link to Text of Law",
