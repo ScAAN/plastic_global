@@ -14,6 +14,7 @@ function showInfo(data, tabletop) {
 
 	var table = new Tabulator("#paperbag_table", {
     	//responsiveLayout:"true",
+	virtualDom:"false",
 	virtualDomBuffer:"40",
     	responsiveLayout:"collapse",
     	responsiveLayoutCollapseStartOpen:false,
