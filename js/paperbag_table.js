@@ -1,4 +1,4 @@
-var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1Ii4utQR9v4GYy2NOSBY_qUtMefyrPanh8m2ICiBdHQo/edit?usp=sharing'
+var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1QXRETu4JIxqxMkmVQg1AiK1oJ8k3n2CoxLSFIR-wh3Y/edit?usp=sharing'
 
 function init() {
     Tabletop.init({ 
@@ -59,7 +59,7 @@ function showInfo(data, tabletop) {
 		//{title:"Key Manipulation", field:"Key Manipulation", formatter:"textarea", width:300},
 		{title:"Key Stats", field:"Key Stats", formatter:"textarea", minWidth:2000},
 		{title:"Destination of fee", field:"Destination of fee", formatter:"textarea", minWidth:2000},
-		{title:"&#162;", field:"Amount of Fee", formatter:"textarea", minWidth:2000},
+		{title:"Amount of fee", field:"Amount of Fee", formatter:"textarea", minWidth:2000},
 		//{title:"Link to Study", field:"Link to Study or Official Website", formatter:"textarea", minWidth:2000},
 		{title:"Link to Law (if available)", field:"Link to Text of Law", minWidth:2000, formatter:"link", formatterParams:{
     labelField:"Link to Text of Law",
