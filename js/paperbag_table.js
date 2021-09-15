@@ -1,15 +1,16 @@
-var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1Ii4utQR9v4GYy2NOSBY_qUtMefyrPanh8m2ICiBdHQo/edit?usp=sharing'
+var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRjkNlWpgcFsnnB3IAeRKeld7o94v6Pw6tmwqpFbtBrZtGyni-kXJetg6TqdzpAGwYACqUhHXOfx7Hn/pub?gid=1811530557&single=true&output=csv'
 
 function init() {
-    Tabletop.init({ 
-		key: publicSpreadsheetUrl,
-        callback: showInfo,
-        simpleSheet: true 
+    Papa.parse(publicSpreadsheetUrl, {
+        complete: showInfo,
+        download: true,
+        header: true
 	});
 }
 
-function showInfo(data, tabletop) {
+function showInfo(result) {
 
+    data = result.data
 	console.log(data);
 
 	var table = new Tabulator("#paperbag_table", {
