@@ -22,18 +22,18 @@ function showInfo(data, tabletop) {
             var list = document.createElement("ul");
 
             for(var key in data){
-		let item = document.createElement("li");                
-		//item.innerHTML = "<strong>" + key + "</strong> - " + data[key];
-		item.innerHTML = "<strong>" + key + "</strong>" + "<pre><small>" + data[key] + "</small></pre>";
-		list.appendChild(item);
+                let item = document.createElement("li");
+                //item.innerHTML = "<strong>" + key + "</strong> - " + data[key];
+                item.innerHTML = "<strong>" + key + "</strong>" + "<pre><small>" + data[key] + "</small></pre>";
+                list.appendChild(item);
             }
 
             return Object.keys(data).length ? list : "";
-	},
+        },
 
-	    height:"100%",
-     	    layout:"fitColumns",
-	    tooltips:true,
+        height:"100%",
+        layout:"fitColumns",
+        tooltips:true,
 	    addRowPos:"top",
 	    history:true,
 	    pagination:false,
